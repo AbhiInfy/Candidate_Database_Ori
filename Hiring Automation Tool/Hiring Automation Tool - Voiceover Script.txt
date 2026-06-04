@@ -1,0 +1,32 @@
+Slide 1: Hiring Automation Tool
+Introducing the Hiring Automation Tool, developed for Motifzone Private Limited. This tool automates resume collection from email, extracts candidate information, and updates a professional Excel tracker.
+
+Slide 2: Business Requirement
+The requirement came from a practical recruitment challenge. Resume emails arrive continuously, and manually downloading attachments, reading each CV, and entering details into Excel consumes valuable recruiter time.
+
+Slide 3: Automated Process Flow
+The process starts from the careers mailbox. The tool reads new emails, downloads CV attachments, extracts useful data, checks duplicates, and updates the Excel tracker automatically.
+
+Slide 4: Professional User Interface
+The client-facing interface is simple. The user enters the email password or app password, then clicks Run New Emails for daily incremental processing, Full Scan for historical processing, or Start From Now to create a fresh checkpoint.
+
+Slide 5: Live Demo Flow
+During the live demo, the user opens the Hiring Automation Tool, clicks Run New Emails, watches useful progress messages such as skipped job descriptions and newly added candidates, and then opens the updated Excel tracker.
+
+Slide 6: Automatic CV Download
+One of the key features is automatic CV download. Recruiters do not need to manually save attachments. The tool connects securely to the mailbox and downloads supported resumes.
+
+Slide 7: AI Resume Data Extraction
+The tool extracts important candidate information such as name, email, contact number, total experience, current company when available, and relevant skills.
+
+Slide 8: Excel Candidate Tracker
+The final output is a structured Excel tracker. The headings are formatted, rows are sorted by latest received email, and duplicate candidates are controlled using name, email, and phone number.
+
+Slide 9: Incremental Email Check
+For daily usage, the tool performs incremental checking. After the checkpoint is created, Run New Emails checks only new emails received after the previous run.
+
+Slide 10: Error And Skip Visibility
+The tool shows useful messages such as skipped job descriptions and incomplete CVs, while hiding confusing low-level technical warnings. This keeps the experience professional for clients.
+
+Slide 11: Benefits For Motifzone Pvt Ltd
+This is a practical automation achievement for Motifzone Private Limited. It reduces manual effort, improves data quality, speeds up recruitment tracking, and demonstrates real AI adoption in business operations.

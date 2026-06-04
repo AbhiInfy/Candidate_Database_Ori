@@ -1,0 +1,6 @@
+file 'C:/Users/Nitin Maheshwari/Documents/Codex/2026-05-13/i-want-to-make-an-ai/Hiring Automation Tool/_video_merge_temp/01_title.mp4'
+file 'C:/Users/Nitin Maheshwari/Documents/Codex/2026-05-13/i-want-to-make-an-ai/Hiring Automation Tool/_video_merge_temp/02_flow.mp4'
+file 'C:/Users/Nitin Maheshwari/Documents/Codex/2026-05-13/i-want-to-make-an-ai/Hiring Automation Tool/_video_merge_temp/03_earlier_demo.mp4'
+file 'C:/Users/Nitin Maheshwari/Documents/Codex/2026-05-13/i-want-to-make-an-ai/Hiring Automation Tool/_video_merge_temp/04_transition.mp4'
+file 'C:/Users/Nitin Maheshwari/Documents/Codex/2026-05-13/i-want-to-make-an-ai/Hiring Automation Tool/_video_merge_temp/05_latest_demo.mp4'
+file 'C:/Users/Nitin Maheshwari/Documents/Codex/2026-05-13/i-want-to-make-an-ai/Hiring Automation Tool/_video_merge_temp/06_end.mp4'

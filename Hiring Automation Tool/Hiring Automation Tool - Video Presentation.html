@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hiring Automation Tool - Video Presentation</title>
+<style>
+body{margin:0;background:#0f1720;color:#fff;font-family:Segoe UI,Arial,sans-serif;}
+.stage{height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;}
+img{max-width:94vw;max-height:82vh;border-radius:10px;box-shadow:0 20px 70px #0008;}
+.bar{width:94vw;display:flex;justify-content:space-between;align-items:center;}
+button{background:#1f77b4;color:white;border:0;border-radius:8px;padding:12px 18px;font-size:16px;cursor:pointer;}
+button.alt{background:#1f8a5b;}
+#caption{color:#cfe4f3;font-size:18px;}
+</style>
+</head>
+<body>
+<div class="stage">
+  <img id="slide" src="">
+  <div class="bar">
+    <div id="caption"></div>
+    <div>
+      <button onclick="prevSlide()">Previous</button>
+      <button class="alt" onclick="playDeck()">Play With Voice</button>
+      <button onclick="nextSlide()">Next</button>
+    </div>
+  </div>
+</div>
+<script>
+const slides=[{img:'presentation_assets/slide_01.png',title:'Hiring Automation Tool',voice:'Introducing the Hiring Automation Tool, developed for Motifzone Private Limited. This tool automates resume collection from email, extracts candidate information, and updates a professional Excel tracker.'},
+{img:'presentation_assets/slide_02.png',title:'Business Requirement',voice:'The requirement came from a practical recruitment challenge. Resume emails arrive continuously, and manually downloading attachments, reading each CV, and entering details into Excel consumes valuable recruiter time.'},
+{img:'presentation_assets/slide_03.png',title:'Automated Process Flow',voice:'The process starts from the careers mailbox. The tool reads new emails, downloads CV attachments, extracts useful data, checks duplicates, and updates the Excel tracker automatically.'},
+{img:'presentation_assets/slide_04.png',title:'Professional User Interface',voice:'The client-facing interface is simple. The user enters the email password or app password, then clicks Run New Emails for daily incremental processing, Full Scan for historical processing, or Start From Now to create a fresh checkpoint.'},
+{img:'presentation_assets/slide_05.png',title:'Live Demo Flow',voice:'During the live demo, the user opens the Hiring Automation Tool, clicks Run New Emails, watches useful progress messages such as skipped job descriptions and newly added candidates, and then opens the updated Excel tracker.'},
+{img:'presentation_assets/slide_06.png',title:'Automatic CV Download',voice:'One of the key features is automatic CV download. Recruiters do not need to manually save attachments. The tool connects securely to the mailbox and downloads supported resumes.'},
+{img:'presentation_assets/slide_07.png',title:'AI Resume Data Extraction',voice:'The tool extracts important candidate information such as name, email, contact number, total experience, current company when available, and relevant skills.'},
+{img:'presentation_assets/slide_08.png',title:'Excel Candidate Tracker',voice:'The final output is a structured Excel tracker. The headings are formatted, rows are sorted by latest received email, and duplicate candidates are controlled using name, email, and phone number.'},
+{img:'presentation_assets/slide_09.png',title:'Incremental Email Check',voice:'For daily usage, the tool performs incremental checking. After the checkpoint is created, Run New Emails checks only new emails received after the previous run.'},
+{img:'presentation_assets/slide_10.png',title:'Error And Skip Visibility',voice:'The tool shows useful messages such as skipped job descriptions and incomplete CVs, while hiding confusing low-level technical warnings. This keeps the experience professional for clients.'},
+{img:'presentation_assets/slide_11.png',title:'Benefits For Motifzone Pvt Ltd',voice:'This is a practical automation achievement for Motifzone Private Limited. It reduces manual effort, improves data quality, speeds up recruitment tracking, and demonstrates real AI adoption in business operations.'}];
+let index=0;
+function show(){document.getElementById('slide').src=slides[index].img;document.getElementById('caption').textContent=(index+1)+' / '+slides.length+' - '+slides[index].title;}
+function speak(text, done){speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(text); u.rate=0.92; u.onend=done; speechSynthesis.speak(u);}
+function playDeck(){show(); speak(slides[index].voice,()=>{ if(index<slides.length-1){index++; setTimeout(playDeck,700);} });}
+function nextSlide(){index=Math.min(slides.length-1,index+1);show();}
+function prevSlide(){index=Math.max(0,index-1);show();}
+show();
+</script>
+</body>
+</html>

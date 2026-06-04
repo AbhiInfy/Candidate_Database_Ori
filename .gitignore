@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local mailbox / candidate data
+downloaded_cvs/
+Downloaded CVs/
+candidate_details.xlsx
+Hiring_Automation_Candidates.xlsx
+imap_cv_agent_state.json
+naukri_job_links.xlsx
+
+# Browser/session data
+naukri_browser_profile/
+
+# Generated media and temporary files
+*.mp4
+*.png
+*TEMP_MPY*
+
+# Local secrets and environment files
+.env
+*.env
